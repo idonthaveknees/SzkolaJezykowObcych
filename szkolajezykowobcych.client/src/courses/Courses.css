@@ -1,3 +1,7 @@
+#courses-container {
+    background-color: #f0f0f0;
+}
+
 #courses-intro {
     background-color: #8B1A1A;
     color: #fff;
@@ -7,6 +11,13 @@
 #courses-intro > p {
     font-size: 30px;
     text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
+}
+
+.course-item {
+    border: solid;
+    border-width: 1px;
+    border-color: #8B1A1A;
+    padding: 15px 0;
 }
 
 .course-photos {

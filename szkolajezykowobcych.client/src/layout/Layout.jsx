@@ -7,7 +7,6 @@ function Layout() {
         <div>
             <Navbar expand="lg" className="mb-3">
                 <Container fluid>
-                    <Navbar.Toggle aria-controls="offcanvasNavbar-expand" />
                     <Navbar.Brand>
                         <Link to="/" className="d-block link">
                             <Image src="/japan_flag.png" className="logo" alt="Logo" />
@@ -16,14 +15,8 @@ function Layout() {
                     </Navbar.Brand>
                     <Navbar.Offcanvas
                         id="offcanvasNavbar-expand"
-                        aria-labelledby="offcanvasNavbarLabel-expand"
                         placement="start"
                     >
-                        <Offcanvas.Header closeButton>
-                            <Offcanvas.Title id="offcanvasNavbarLabel-expand">
-                                Offcanvas
-                            </Offcanvas.Title>
-                        </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link>

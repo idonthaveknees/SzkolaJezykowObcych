@@ -45,7 +45,7 @@ const HomePage = () => {
                                 <Card.Body>
                                     <Card.Title>Individual Approach</Card.Title>
                                     <Card.Text>
-                                        We will tailor the curriculum to your needs, abilites, and wants.
+                                        We will tailor the curriculum and the way we teach to your needs, abilites, and wants.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
