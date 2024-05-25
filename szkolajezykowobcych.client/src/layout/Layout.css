@@ -1,0 +1,11 @@
+
+.logo {
+    border: double;
+    margin-right: 10px;
+    width: 120px;
+}
+
+#kursy {
+    color: #8B1A1A;
+    font-weight: 500;
+}

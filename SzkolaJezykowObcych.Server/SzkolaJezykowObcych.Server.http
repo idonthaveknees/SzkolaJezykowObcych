@@ -1,0 +1,6 @@
+@SzkolaJezykowObcych.Server_HostAddress = http://localhost:5017
+
+GET {{SzkolaJezykowObcych.Server_HostAddress}}/weatherforecast/
+Accept: appRowcation/json
+
+###
