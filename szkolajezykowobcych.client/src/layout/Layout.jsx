@@ -9,7 +9,7 @@ function Layout() {
                 <Container fluid>
                     <Navbar.Toggle aria-controls="offcanvasNavbar-expand" />
                     <Navbar.Brand>
-                        <Link to="/" className="d-block">
+                        <Link to="/" className="d-block link">
                             <Image src="/japan_flag.png" className="logo" alt="Logo" />
                             Foreign Language School
                         </Link>
@@ -27,18 +27,19 @@ function Layout() {
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link>
-                                    <Link to="/" className="d-block">Home</Link>
+                                    <Link to="/" className="d-block link">Home</Link>
                                 </Nav.Link>
                                 <NavDropdown
                                     title="Courses"
                                     id="kursy"
+                                    className="link"
                                 >
                                     <NavDropdown.Item>
-                                        <Link to="/courses" className="d-block">List of courses</Link>
+                                        <Link to="/courses" className="d-block link">List of courses</Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item>
-                                        <Link to="/teachers" className="d-block">Teachers</Link>
+                                        <Link to="/teachers" className="d-block link">Teachers</Link>
                                     </NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>

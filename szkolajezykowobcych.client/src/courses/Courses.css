@@ -1,5 +1,16 @@
+#courses-intro {
+    background-color: #8B1A1A;
+    color: #fff;
+    padding: 20px;
+}
+
+#courses-intro > p {
+    font-size: 30px;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
+}
+
 .course-photos {
-    width: 150px;
+    width: 200px;
     height: 150px;
     object-fit: cover;
     border-radius: 8px;

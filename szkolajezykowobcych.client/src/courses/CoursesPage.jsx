@@ -4,8 +4,7 @@ import { Card, Col, Container, Image, Row } from 'react-bootstrap';
 const Courses = () => {
     return (
         <Container>
-            <Card className="mb-4">
-                <Card.Title>Our courses</Card.Title>
+            <Card className="mb-4" id="courses-intro">
                 <Card.Text>All you need to know about our courses.</Card.Text>
             </Card>
             <Row className="course-item align-items-center mb-3">

@@ -3,20 +3,8 @@
     padding: 2rem;
 }
 
-tr:nth-child(even) {
-    background: #fff0f0;
-}
-
-tr:nth-child(odd) {
-    background: #fff0f0;
-}
-
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
 .main-section {
+    position: relative;
     background-color: #fff0f0;
     padding: 70px 0;
     margin-bottom: 50px;
@@ -24,22 +12,39 @@ th, td {
     border-color: #FFBEBE;
 }
 
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
 .main-section h1 {
+    position: relative;
     font-size: 3rem;
-    font-family: 'Franklin Gothic';
-    color: #480607;
+    color: #fff;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
 }
 
 .main-section p {
+    position: relative;
     font-size: 1.2rem;
+    color: #480607;
 }
 
 .offer-button {
+    position: relative;
     background-color: #8B1A1A;
+    border: solid;
+    border-color: #761616;
 }
 
-.offer-button:hover{
+.offer-button:hover {
     background-color: #480607;
+    border-color: #761616;
 }
 
 .features-section {
@@ -59,32 +64,39 @@ th, td {
     color: #fff;
     margin-top: 50px;
     opacity: 0.85;
-    padding: 30px 0;
+    padding-top: 15px;
     border: double;
     border-color: #761616;
 }
 
 .opinion-section h2 {
     font-size: 2.5rem;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
 }
 
 .opinion-section .opinion-text {
     font-size: 1.5rem;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
 }
 
 .opinion-section .opinion-author {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     margin-top: 20px;
     text-align: right;
     padding-right: 50px;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
 }
 
 .tests-section {
     margin: 100px 0;
 }
 
+.tests-section h2 {
+    font-size: 2.5rem;
+}
+
 .test {
-    width: 300px;
+    width: 350px;
 }

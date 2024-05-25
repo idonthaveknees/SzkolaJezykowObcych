@@ -4,9 +4,10 @@ import './App.css';
 
 const HomePage = () => {
     return (
-        <div>
+        <Container flex>
             <section className="main-section">
                 <Container>
+                    <Image src="/fuji.jpg" className="background-image" />
                     <h1>Welcome to the Foreign Language School</h1>
                     <p>Learning languages has never been easier!</p>
                     <Link to="/courses">
@@ -77,7 +78,7 @@ const HomePage = () => {
                     </Row>
                 </Container>
             </section>
-        </div>
+        </Container>
     );
 }
 
