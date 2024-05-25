@@ -41,7 +41,7 @@ function Layout() {
                 </Container>
             </Navbar>
 
-            <div className="px-3">
+            <div className="px-3 background">
                 <Container fluid>
                     <Outlet />
                 </Container>

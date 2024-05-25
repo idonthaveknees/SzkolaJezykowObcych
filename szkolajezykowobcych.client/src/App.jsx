@@ -54,16 +54,16 @@ const HomePage = () => {
                 </Container>
             </section>
 
-            <section className="opinion-section">
-                <Container>
-                    <h2 className="mb-5">What do our students say?</h2>
-                    <p className="opinion-text">I never thought learning a language could be so enjoyable! I recommend the school to anyone who wants to learn a new language quickly and effectively.</p>
-                    <p className="opinion-author">- John Doe</p>
-                </Container>
+            <section>
+                <Card className="pb-3 opinion-section">
+                    <Card.Title className="mb-3" id="opinion-title">What do our students say?</Card.Title>
+                    <Card.Text id="opinion-text">I never thought learning a language could be so enjoyable! I recommend the school to anyone who wants to learn a new language quickly and effectively.</Card.Text>
+                    <Card.Text id="opinion-author">- John Doe</Card.Text>
+                </Card>
             </section>
 
-            <section className="tests-section">
-                <Container>
+            <section>
+                <Card className="pt-3 pb-3 tests-section">
                     <h2 className="text-center mb-5">We can help you get ready for:</h2>
                     <Row>
                         <Col>
@@ -76,7 +76,7 @@ const HomePage = () => {
                             <Image src="/hsk.jpg" className="test" alt="HSK" />
                         </Col>
                     </Row>
-                </Container>
+                </Card>
             </section>
         </Container>
     );
