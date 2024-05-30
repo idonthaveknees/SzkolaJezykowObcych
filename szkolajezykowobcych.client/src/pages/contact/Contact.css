@@ -1,0 +1,32 @@
+.contact-h1 {
+    color: #fff;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
+}
+
+.contact-description > p > b {
+    color: #480607;
+}
+
+.form > label {
+    color: #480607;
+}
+
+.form-input {
+    margin-bottom: 2rem;
+    padding: .75rem;
+    width: 100%;
+    border-color: #fff0f0;
+}
+
+.submit-button {
+    background-color: #480607;
+    border: none;
+    color: #fff0f0;
+    font-size: .9rem;
+    margin-bottom: 4rem;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 8rem;
+}

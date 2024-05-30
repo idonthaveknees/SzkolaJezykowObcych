@@ -34,7 +34,17 @@ function Layout() {
                                     <NavDropdown.Item>
                                         <Link to="/teachers" className="d-block link">Teachers</Link>
                                     </NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item>
+                                        <Link to="/calendar" className="d-block link">Calendar</Link>
+                                    </NavDropdown.Item>
                                 </NavDropdown>
+                                <Nav.Link>
+                                    <Link to="/contact" className="d-block link">Contact</Link>
+                                </Nav.Link>
+                                <Nav.Link>
+                                    <Link to="/enroll" className="d-block link">Enroll</Link>
+                                </Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>

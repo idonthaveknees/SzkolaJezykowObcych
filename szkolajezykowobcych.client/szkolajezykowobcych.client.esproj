@@ -9,8 +9,14 @@
     <PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist</PublishAssetsDirectory>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="public\NewFolder\" />
-    <Folder Include="src\courses\" />
-    <Folder Include="src\teachers\" />
+    <Folder Include="src\pages\courses\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\pages\teachers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="public\NewFolder\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="public\NewFolder\**" />
   </ItemGroup>
 </Project>
