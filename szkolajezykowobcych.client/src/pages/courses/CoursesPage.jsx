@@ -1,5 +1,41 @@
 ﻿import './Courses.css';
-import { Card, Col, Container, Image, Row } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
+import CourseItem from './../../components/CourseItem';
+
+const courseData = [
+    {
+        title: 'Japanese Language Study - N5-N1',
+        description: 'Comprehensive courses from beginner to advanced levels, preparing for the JLPT exams.',
+        imageUrl: '/courses/japanese_course.jpg',
+        imageAlt: 'Japanese course',
+        textAlign: 'text-end',
+        order: { text: 1, image: 2 }
+    },
+    {
+        title: 'Korean Language Study - Levels 1-6',
+        description: 'Courses tailored to different proficiency levels, aiming for the TOPIK certification.',
+        imageUrl: '/courses/korean_course.jpg',
+        imageAlt: 'Korean course',
+        textAlign: 'text-start',
+        order: { text: 2, image: 1 }
+    },
+    {
+        title: 'Chinese Language Study - HSK II-VI',
+        description: 'Structured courses for all levels, focusing on achieving HSK certification.',
+        imageUrl: '/courses/chinese_course.jpg',
+        imageAlt: 'Chinese course',
+        textAlign: 'text-end',
+        order: { text: 1, image: 2 }
+    },
+    {
+        title: 'Getting Ready for JLPT, TOPIK, and HSK Tests',
+        description: 'Special preparation courses designed to help you excel in these standardized language proficiency tests.',
+        imageUrl: '/courses/test_courses.jpg',
+        imageAlt: 'Test courses',
+        textAlign: 'text-start',
+        order: { text: 2, image: 1 }
+    },
+];
 
 const Courses = () => {
     return (
@@ -7,42 +43,9 @@ const Courses = () => {
             <Card className="mb-4" id="courses-intro">
                 <Card.Text>All you need to know about our courses.</Card.Text>
             </Card>
-            <Row className="course-item align-items-center mb-3">
-                <Col className="text-end" xs={{ span: 9, order: 1 }} >
-                    <h5>Japanese Language Study - N5-N1</h5>
-                    <p>Comprehensive courses from beginner to advanced levels, preparing for the JLPT exams.</p>
-                </Col>
-                <Col xs={{ span: 3, order: 2 }}>
-                    <Image src="/courses/japanese_course.jpg" className="course-photos" alt="Japanese course" />
-                </Col>
-            </Row>
-            <Row className="course-item align-items-center mb-3">
-                <Col className="text-start" xs={{ span: 9, order: 2 }} >
-                    <h5>Korean Language Study - Levels 1-6</h5>
-                    <p>Courses tailored to different proficiency levels, aiming for the TOPIK certification.</p>
-                </Col>
-                <Col xs={{ span: 3, order: 1 }} >
-                    <Image src="/courses/korean_course.jpg" className="course-photos" alt="Korean course" />
-                </Col>
-            </Row>
-            <Row className="course-item align-items-center mb-3">
-                <Col className="text-end" xs={{ span: 9, order: 1 }} >
-                    <h5>Chinese Language Study - HSK II-VI</h5>
-                    <p>Structured courses for all levels, focusing on achieving HSK certification.</p>
-                </Col>
-                <Col xs={{ span: 3, order: 2 }}>
-                    <Image src="/courses/chinese_course.jpg" className="course-photos" alt="Chinese course" />
-                </Col>
-            </Row>
-            <Row className="course-item align-items-center mb-3">
-                <Col className="text-start" xs={{ span: 9, order: 2 }} >
-                    <h5>Getting Ready for JLPT, TOPIK, and HSK Tests</h5>
-                    <p>Special preparation courses designed to help you excel in these standardized language proficiency tests.</p>
-                </Col>
-                <Col xs={{ span: 3, order: 1 }}>
-                    <Image src="/courses/test_courses.jpg" className="course-photos" alt="Test courses" />
-                </Col>
-            </Row>
+            {courseData.map((course, index) => (
+                <CourseItem key={index} {...course} />
+            ))}
         </Container>
     );
 }

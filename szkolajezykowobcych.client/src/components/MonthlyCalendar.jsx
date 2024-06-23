@@ -1,8 +1,9 @@
 import Event from './Event.jsx';
+import { PropTypes } from 'prop-types';
 
 const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-export const MonthlyCalendar = ({ year, month, events = [] }) => {
+const MonthlyCalendar = ({ year, month, events = [] }) => {
     const getDaysInMonth = (year, month) => {
         return new Date(year, month + 1, 0).getDate();
     };
@@ -16,11 +17,7 @@ export const MonthlyCalendar = ({ year, month, events = [] }) => {
 
     const daysArray = Array.from({ length: daysInMonth }, (_, i) => i + 1);
     const emptyStartDays = Array.from({ length: firstDay }, () => null);
-    var emptyEndDaysCount = 42 - (emptyStartDays.length + daysInMonth);
-
-    if (emptyEndDaysCount > 7) {
-        emptyEndDaysCount -= 7;
-    }
+    var emptyEndDaysCount = 35 - (emptyStartDays.length + daysInMonth);
 
     const emptyEndDays = Array.from({ length: emptyEndDaysCount }, () => null);
 
@@ -74,3 +71,20 @@ export const MonthlyCalendar = ({ year, month, events = [] }) => {
         </div>
     );
 };
+
+MonthlyCalendar.propTypes = {
+    year: PropTypes.number.isRequired,
+    month: PropTypes.number.isRequired,
+    events: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            teacher: PropTypes.string.isRequired,
+            date: PropTypes.string.isRequired,
+            time: PropTypes.string.isRequired,
+        })
+    ),
+};
+
+export default MonthlyCalendar;

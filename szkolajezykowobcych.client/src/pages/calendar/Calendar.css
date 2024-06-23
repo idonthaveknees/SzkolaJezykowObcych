@@ -35,7 +35,7 @@
 .calendar-day {
     flex: 1 0 14.28%;
     border: 1px solid #480607;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     box-sizing: border-box;
     text-align: center;
 }

@@ -1,2 +1,54 @@
-body {
+.course-title {
+    color: #fff;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
+}
+
+.course-language {
+    color: #480607;
+}
+
+.plans {
+    background-color: #fff0f0;
+}
+
+.enrollment {
+    background-color: #8B1A1A;
+    color: #fff;
+    margin-top: 50px;
+    opacity: 0.85;
+    padding-top: 15px;
+    border: double;
+    border-color: #761616;
+}
+
+.enrollment-title {
+    font-size: 2.5rem;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
+}
+
+.enrollment-text {
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
+}
+
+.discount {
+    background-color: #8B1A1A;
+    color: #fff;
+    margin-top: 50px;
+    opacity: 0.85;
+    padding-top: 15px;
+    border: double;
+    border-color: #761616;
+}
+
+.discount-title {
+    font-size: 2.5rem;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
+}
+
+.discount-text {
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-shadow: -1px 0 #530f0f, 0 1px #530f0f, 1px 0 #530f0f, 0 -1px #530f0f;
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Card } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 const formatTime = (time) => {
     const [hours, minutes] = time.split(':');
@@ -7,8 +8,6 @@ const formatTime = (time) => {
     const suffix = hour >= 12 ? 'PM' : 'AM';
     return `${hour}:${minutes} ${suffix}`
 }
-
-
 
 const EventCard = ({ name, description, teacher, date, time }) => {
     return (
@@ -40,6 +39,22 @@ const Event = ({ name, description, teacher, date, time }) => {
             )}
         </div>
     );
+};
+
+EventCard.propTypes = {
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    teacher: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+};
+
+Event.propTypes = {
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    teacher: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
 };
 
 export default Event;

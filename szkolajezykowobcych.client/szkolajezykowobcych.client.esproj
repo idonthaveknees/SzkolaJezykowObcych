@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\pages\courses\" />
-    <Folder Include="src\components\" />
+    <Folder Include="src\pages\NewFolder\" />
     <Folder Include="src\pages\teachers\" />
   </ItemGroup>
   <ItemGroup>

@@ -40,10 +40,13 @@ function Layout() {
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link>
-                                    <Link to="/contact" className="d-block link">Contact</Link>
+                                    <Link to="/prices" className="d-block link">Prices</Link>
                                 </Nav.Link>
                                 <Nav.Link>
-                                    <Link to="/enroll" className="d-block link">Enroll</Link>
+                                    <Link to="/gallery" className="d-block link">Gallery</Link>
+                                </Nav.Link>
+                                <Nav.Link>
+                                    <Link to="/contact" className="d-block link">Contact</Link>
                                 </Nav.Link>
                             </Nav>
                         </Offcanvas.Body>

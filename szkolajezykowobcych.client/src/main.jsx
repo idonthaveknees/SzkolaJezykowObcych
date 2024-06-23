@@ -6,6 +6,7 @@ import Enroll from './pages/enroll/Enroll.jsx';
 import Courses from './pages/courses/CoursesPage.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import Calendar from './pages/calendar/Calendar.jsx';
+import Gallery from './pages/NewFolder/Gallery.jsx';
 import Layout from './layout/Layout.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
@@ -26,11 +27,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path='/calendar' element={<Layout />}>
                     <Route index element={<Calendar />} />
                 </Route>
+                <Route path='/prices' element={<Layout />}>
+                    <Route index element={<Enroll />} />
+                </Route>
+                <Route path='/gallery' element={<Layout />}>
+                    <Route index element={<Gallery />} />
+                </Route>
                 <Route path='/contact' element={<Layout />}>
                     <Route index element={<Contact />} />
-                </Route>
-                <Route path='/enroll' element={<Layout />}>
-                    <Route index element={<Enroll />} />
                 </Route>
             </Routes>
         </BrowserRouter >

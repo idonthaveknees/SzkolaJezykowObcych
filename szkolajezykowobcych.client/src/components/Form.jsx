@@ -56,6 +56,7 @@ export function Form() {
             }, (error) => {
                 console.log(error.text);
             });
+        setFormData({ ...formData, name: '', phone: '', email: '', message: '' });
     };
 
     useEffect(() => {
